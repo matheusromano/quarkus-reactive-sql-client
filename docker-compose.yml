@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  db:
+    image: postgres
+    container_name: postgresql
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: reactive_pg_db
+    ports:
+      - "5432:5432"
